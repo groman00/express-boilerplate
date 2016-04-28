@@ -22,4 +22,4 @@ I've included some sample api endpoints in case they are needed.  You can intera
 
 # Socket.io
 
-Socket.io may be needed to communicate between client and server.  You can see an example of that by going to here: http://localhost:3000/board
+Socket.io may be needed to communicate between client and server.  You can see an example of that by going here: http://localhost:3000/board
