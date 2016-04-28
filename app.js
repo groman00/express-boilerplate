@@ -1,14 +1,34 @@
+var five = require("johnny-five");
+var board = new five.Board();
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
 var routes = require('./routes/index');
 var api = require('./routes/api');
-
 var app = express();
+
+/* Socket.io */
+app.io = require('socket.io')()
+app.io.on('connection', function(socket){
+
+    console.log("Connection Ready", arguments)
+    
+    //talk back to the client that connected
+    socket.emit('activity', { 
+        message: "Connection Successful",
+        id: socket.id 
+    });
+
+    //Do stuff with the arduino board
+    board.on("ready", function() {
+        console.log("Board Ready", arguments)
+    });
+
+});
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
