@@ -3,3 +3,13 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  div(class="form-container")
+    form(method="GET" action="/api" target="_blank")
+        button(type="submit") Sample API Endpoint
+  div(class="form-container")
+    form(method="POST" action="/api" target="_blank")
+        label First Name:
+            input(type="text" name="firstname")
+        label Last Name:
+            input(type="text" name="lastname")        
+        button(type="submit") Post to API Endpoint

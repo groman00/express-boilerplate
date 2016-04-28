@@ -6,3 +6,20 @@ body {
 a {
   color: #00B7FF;
 }
+
+.form-container{
+    border:solid 2px #ccc;
+    margin:20px 0;
+    padding:20px;
+}
+
+.form-container label{
+    display:block;
+    padding:5px;
+    margin:10px 0;
+}
+
+.form-container label input{
+    margin-left:10px;
+}
+
