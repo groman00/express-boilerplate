@@ -1,8 +1,8 @@
-# Express Boilerplate for Study Pea
+# Express Boilerplate
 
 Node boilerplate code using Express Framework: https://github.com/expressjs/express
 
-Make sure you have node js w/ npm installed: https://nodejs.org/en/
+Must have node js w/ npm installed: https://nodejs.org/en/
 
 # Quick Start
 
@@ -14,12 +14,12 @@ Start Server
 
 `$ npm start`
 
-You'll be able to view this project at http://localhost:3000/
+You'll be able to view the project at http://localhost:3000/
 
 # Example Api Endpoints
 
-I've included some sample api endpoints in case they are needed.  You can interact with those at the site index: http://localhost:3000/
+http://localhost:3000/
 
 # Socket.io
 
-Socket.io may be needed to communicate between client and server.  You can see an example of that by going here: http://localhost:3000/board
+Connect to Arduino using johnny-five: http://localhost:3000/board
